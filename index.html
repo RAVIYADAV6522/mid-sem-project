@@ -1,0 +1,357 @@
+<html>
+
+<head>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        .Movie-list {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 20px;
+    grid-template-rows: repeat(3,1fr);
+}
+.Movie {
+    border:  2px black solid;
+    width: 225px;
+    
+    font-family: 'Poppins', sans-serif;
+}
+.Movie h1 {
+     font-size: 23px;
+     font-family: Arial;
+     text-align: center;
+}
+.Movie p {
+    font-size: 15px;
+    font-family: Arial;
+    margin-left: 20px;
+}
+.Movie img {
+    height: 260px;
+    width: 225px;
+}
+.search-box {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: whitesmoke;
+
+}
+input {
+    padding: 5px;
+    width: 200px;
+    border: 1px solid black;
+    color: red;
+    border-radius: 5px;
+}
+.search {
+    background-color: black;
+    color: white;
+    width: 90px;
+}
+.search-box {
+    background-color: white;
+}
+
+.all {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 10px;
+}
+.favorite {
+     padding-left: 20px;
+    padding-right: 20px;
+    margin: 10px;
+}
+.all:hover {
+    background-color: black;
+    color: white;
+}
+
+.favorite:hover {
+    background-color: black;
+    color: white;
+}
+
+.bottom-button {
+    text-align: center;
+}
+.previous {
+    padding: 5px;
+    margin: 10px;
+}
+.current-page1 {
+    padding: 5px;
+    margin: 10px;
+}
+.next {
+    padding: 5px;
+    margin: 10px;
+}
+
+.footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 1px;
+}
+
+
+    </style>
+</head>
+
+<body>
+    <div class="search-box">
+        <form>
+            <input type="text" placeholder="search by name" class="search-input">
+            <button class="search">search</button>
+        </form>
+    </div>
+
+    <div class="choice">
+        <button class="all">All</button>
+        <button class="favorite">Favorite</button>
+    </div>
+
+    <main>
+        <div class="Movie-list">
+            <div class="Movie">
+                <div class="Movie-header">
+                    <img
+                        src='https://d3dyfaf3iutrxo.cloudfront.net/general/upload/171572d0d40e4841956a530918aebc99.jpg'>
+                </div>
+                <div class="Movie-body">
+                    <div class="Movie-info">
+                        <h1>The Shawshank Redemption</h1>
+                        <p>Votes: 25650</p>
+                        <p>Rating: 8.704</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Movie">
+                <div class="Movie-header">
+                    <img
+                        src='https://d3dyfaf3iutrxo.cloudfront.net/general/upload/f7c021a4920c4491ad0ffeddc7f656e6.jpg'>
+                </div>
+                <div class="Movie-body">
+                    <div class="Movie-info">
+                        <h1>The Godfather</h1>
+                        <p>Votes: 19502</p>
+                        <p>Rating: 8.696</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Movie">
+                <div class="Movie-header">
+                    <img
+                        src='https://d3dyfaf3iutrxo.cloudfront.net/general/upload/96064a9fd5574ed7b4c164d5a7500998.jpg'>
+                </div>
+                <div class="Movie-body">
+                    <div class="Movie-info">
+                        <h1>The Godfather Part II</h1>
+                        <p>Votes: 11783</p>
+                        <p>Rating: 8.577</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Movie">
+                <div class="Movie-header">
+                    <img
+                        src='https://d3dyfaf3iutrxo.cloudfront.net/general/upload/02c0d952de3c40aa9553fc1ae3e95e5d.jpg'>
+                </div>
+                <div class="Movie-body">
+                    <div class="Movie-info">
+                        <h1>Schindler's List</h1>
+                        <p>Votes: 15157</p>
+                        <p>Rating: 8.566</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Movie">
+                <div class="Movie-header">
+                    <img
+                        src='https://d3dyfaf3iutrxo.cloudfront.net/general/upload/98bffc2328324f9eaaae663815150d8b.jpg'>
+                </div>
+                <div class="Movie-body">
+                    <div class="Movie-info">
+                        <h1>Spirited Away</h1>
+                        <p>Votes: 15558</p>
+                        <p>Rating: 8.539</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Movie">
+                <div class="Movie-header">
+                    <img
+                        src='https://d3dyfaf3iutrxo.cloudfront.net/general/upload/548c8e5c31fc41aba24675458c963514.jpg'>
+                </div>
+                <div class="Movie-body">
+                    <div class="Movie-info">
+                        <h1>12 Angry Men</h1>
+                        <p>Votes: 8067</p>
+                        <p>Rating: 8.537</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Movie">
+                <div class="Movie-header">
+                    <img
+                        src='https://d3dyfaf3iutrxo.cloudfront.net/general/upload/8846c76c60b147a28569038e91d3ea5a.jpg'>
+                </div>
+                <div class="Movie-body">
+                    <div class="Movie-info">
+                        <h1>Dilwale Dulhania Le Jayenge</h1>
+                        <p>Votes: 4345</p>
+                        <p>Rating: 8.535</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Movie">
+                <div class="Movie-header">
+                    <img
+                        src='https://d3dyfaf3iutrxo.cloudfront.net/general/upload/89e729407fec42ae96bd9d7447c6808c.jpg'>
+                </div>
+                <div class="Movie-body">
+                    <div class="Movie-info">
+                        <h1>The Dark Knight</h1>
+                        <p>Votes: 31504</p>
+                        <p>Rating: 8.5</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Movie">
+                <div class="Movie-header">
+                    <img
+                        src='https://d3dyfaf3iutrxo.cloudfront.net/general/upload/c69b767f587946a88200909fadf396ce.jpg'>
+                </div>
+                <div class="Movie-body">
+                    <div class="Movie-info">
+                        <h1>Parasite</h1>
+                        <p>Votes: 17148</p>
+                        <p>Rating: 8.509</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Movie">
+                <div class="Movie-header">
+                    <img
+                        src='https://d3dyfaf3iutrxo.cloudfront.net/general/upload/a374245c0778420fb4d52b477e9e84b2.jpg'>
+                </div>
+                <div class="Movie-body">
+                    <div class="Movie-info">
+                        <h1>The Green Mile</h1>
+                        <p>Votes: 16520</p>
+                        <p>Rating: 8.5008</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Movie">
+                <div class="Movie-header">
+                    <img
+                        src='https://d3dyfaf3iutrxo.cloudfront.net/general/upload/77f1fd135b7c4b7ca869debfea7c27f9.jpg'>
+                </div>
+                <div class="Movie-body">
+                    <div class="Movie-info">
+                        <h1>Your Name.</h1>
+                        <p>Votes: 10772</p>
+                        <p>Rating: 8.497</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Movie">
+                <div class="Movie-header">
+                    <img
+                        src='https://d3dyfaf3iutrxo.cloudfront.net/general/upload/1fcc2afb4fa34a5589139212ba0235c2.jpg'>
+                </div>
+                <div class="Movie-body">
+                    <div class="Movie-info">
+                        <h1>Pulp Fiction</h1>
+                        <p>Votes: 26686</p>
+                        <p>Rating: 8.49</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Movie">
+                <div class="Movie-header">
+                    <img
+                        src='https://d3dyfaf3iutrxo.cloudfront.net/general/upload/647b31af386e4c018a8add6b9a5bd9a4.jpg'>
+                </div>
+                <div class="Movie-body">
+                    <div class="Movie-info">
+                        <h1>Forrest Gump</h1>
+                        <p>Votes: 26210</p>
+                        <p>Rating: 8.477</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Movie">
+                <div class="Movie-header">
+                    <img
+                        src='https://d3dyfaf3iutrxo.cloudfront.net/general/upload/1b5f03be912c486585404f4887fabe3a.jpg'>
+                </div>
+                <div class="Movie-body">
+                    <div class="Movie-info">
+                        <h1>The Lord of the Rings: The Return of the King</h1>
+                        <p>Votes: 23067</p>
+                        <p>Rating: 8.476</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Movie">
+                <div class="Movie-header">
+                    <img
+                        src='https://d3dyfaf3iutrxo.cloudfront.net/general/upload/c502315e1c5847b681708d0f257260ed.jpg'>
+                </div>
+                <div class="Movie-body">
+                    <div class="Movie-info">
+                        <h1>GoodFellas</h1>
+                        <p>Votes: 12170</p>
+                        <p>Rating: 8.467</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Movie">
+                <div class="Movie-header">
+                    <img
+                        src='https://d3dyfaf3iutrxo.cloudfront.net/general/upload/699bd32d51af472a86f15af36f6e0507.jpg'>
+                </div>
+                <div class="Movie-body">
+                    <div class="Movie-info">
+                        <h1>'The Good, the Bad and the Ugly'</h1>
+                        <p>Votes: 8093</p>
+                        <p>Rating: 8.466</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+
+    <div class="bottom-button">
+        <button class="previous">Previous</button>
+        <button class="current-page1">Current page 1</button>
+        <button class="next">Next</button>
+
+    </div>
+
+    <div class="footer">
+        <p>@ 2023 Movie Deck</p>
+    </div>
+</body>
+
+</html>
